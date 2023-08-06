@@ -9,8 +9,8 @@ export const Route = () => {
     const stack = createStackNavigator()
     return (
         <NavigationContainer>
-            <stack.Navigator>
-                <stack.Screen name="Login" component={First} />
+            <stack.Navigator initialRouteName="Login">
+                <stack.Screen name="Login" component={First}/>
                 <stack.Screen name="Principal" component={Second} />
             </stack.Navigator>
         </NavigationContainer>

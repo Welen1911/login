@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
@@ -10,7 +9,7 @@ export const First = () => {
     const [nome, setNome] = useState("Digite o seu nome")
     const [senha, setSenha] = useState("")
     const navigateToSecond = () => {
-        navigation.navigate(`Principal`, nome, senha)
+        navigation.navigate(`Principal`, { user: {nome: nome, senha: senha}, })
     }
     return (
         <View style={styles.container}>
@@ -27,7 +26,6 @@ export const First = () => {
             ></TextInput>
             <TextInput placeholder='Senha' secureTextEntry={true} onChangeText={(newSenha) => setSenha(newSenha)} style={{ height: 40, width: 240, borderColor: 'black', borderWidth: 1, marginBottom: 20 }}></TextInput>
             <Button title={nome} style={{ height: 20, with: 240, backgroundColor: "red" }} onPress={navigateToSecond}></Button>
-            <StatusBar style="auto" />
         </View>
     );
 }
