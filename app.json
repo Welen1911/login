@@ -18,6 +18,11 @@
       "supportsTablet": true
     },
     "android": {
+      "config": {
+        "bingMaps": {
+          "apiKey": "ArIHJhyUXM3q9bU6VJ3G0uyrjgmeYxSlIPHJ2XRFSwMpqPjsV-YS7NVwYjQbMvJA"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
