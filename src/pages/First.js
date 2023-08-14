@@ -9,7 +9,7 @@ export const First = () => {
     const [nome, setNome] = useState("Digite o seu nome")
     const [senha, setSenha] = useState("")
     const navigateToSecond = () => {
-        navigation.navigate(`mapView`, { user: { nome: nome, senha: senha }, })
+        navigation.navigate(`Principal`, { user: { nome: nome, senha: senha }, })
     }
     return (
         <View style={styles.container}>

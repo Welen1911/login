@@ -11,7 +11,6 @@ import {
 import MapView, { Marker } from 'react-native-maps';
 
 import { styles } from './css/Styles';
-import { BtNavi } from './components/BtNavi';
 
 export const MapViewComponent = () => {
 
@@ -68,7 +67,6 @@ export const MapViewComponent = () => {
                     }} />
                 </MapView>
             }
-            <BtNavi></BtNavi>
         </View>
     );
 }
